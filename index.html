@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h1 id="header-title">To Do List</h1>
+        <form id="search-form" action="">
+            <input type="text" placeholder="Search...  ">
+        </form>
+    </header>
+    <main>
+        <h2>Your List</h2>
+        <ul id="to-do-list">
+            <li class="to-do-item">
+                <span class="title">go shopping</span>
+                <span class="delete-button">Delete</span>
+            </li>
+            <li class="to-do-item">
+                <span class="title">call with Dr.Mueller</span>
+                <span class="delete-button">Delete</span>
+            </li>
+            <li class="to-do-item">
+                <span class="title">take a shower</span>
+                <span class="delete-button">Delete</span>
+            </li>
+            <li class="to-do-item">
+                <span class="title">lunch with Hami</span>
+                <span class="delete-button">Delete</span>
+            </li>
+        </ul>
+    </main>
+    <section>
+        <div id="add-section">
+            <div><input id="add-input" type="text" placeholder="   Add Tasks..."></div>
+            <button onclick="addClick()" id="add-btn">Add</button>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
