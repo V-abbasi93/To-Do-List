@@ -1,4 +1,6 @@
 init()
+var searchInput = document.querySelector("#search-form input")
+let list = document.querySelector("#to-do-list")
 
 function init() {
     var btn = document.getElementsByClassName("delete-button");
@@ -35,3 +37,12 @@ function addClick() {
     task.focus()
     init()
 }
+
+searchInput.addEventListener("input", (e)=>{
+    Array.from(list.children).forEach(element => {
+        if(!element.querySelector(".title").innerText.toLowerCase().includes(e.target.value.toLowerCase())){
+            element.style.display = "none"
+        }else
+            element.style.display = "flex"
+    });
+})
